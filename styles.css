@@ -231,27 +231,84 @@ input:checked ~ .topmenu{
   animation-name: auglysingEitt;
   animation-duration: 4s;
 }
+
+.auglysing1Box{
+  border: solid blue 2px;
+  background-color: blue;
+  height: 50px;
+  width: 100px;
+  position: relative;
+}
 @keyframes auglysingEitt {
-    from  {background-color:blue; left:0px; top:-15em;}
+    from  {background-color:blue; left:0px; top:-30em;}
 }
 
 .auglysing2{
   border: solid blue 2px;
   height: 200px;
   top:0;
-  background-color: red;
+  background: linear-gradient(green,lightblue, green);
   position: relative;
   animation-name: auglysingTvo;
   animation-duration: 4s;
+  overflow: hidden;
 }
 
 .auglysing2Box{
   border: solid blue 2px;
   height: 50px;
   width: 100px;
-  left: 36.8em;
-  background-color: blue;
+  left:70em;
+  top: 5em;
+  background-color: grey;
+  color: green;
   position: relative;
+  border-radius: 10%; 
+  display: block;
+  z-index: 99;
+}
+
+.logo{
+  border: solid blue 2px;
+  height: 50px;
+  width: 100px;
+  left:0;
+  top: 0;
+  background-color: grey;
+  color: green;
+  position: relative;
+  border-radius: 10%;
+  animation-name: logo;
+  animation-duration: 3s;
+}
+
+.kassi{
+  border: solid blue 2px;
+  height: 50px;
+  width: 100px;
+  left:100em;
+  top: -5em;
+  background-color: grey;
+  color: red;
+  position: relative;
+  border-radius: 10%;
+  animation-name: kassi;
+  animation-duration: 3s;
+  animation-iteration-count: 1000;
+}
+
+.kassi1{
+  left:35em;
+  top: -7em;
+  position: relative;
+}
+
+@keyframes kassi {
+    from  {left:0em;}
+}
+
+@keyframes logo {
+    from  {background-color:blue;left:-20em;}
 }
 
 @keyframes auglysingTvo {
