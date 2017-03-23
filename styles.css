@@ -151,39 +151,39 @@ input:checked ~ .topmenu{
     order:3;
   }
 @media screen and (min-width:30em) {
-	section {
-		display: block;
-	}
-	.vinstri {
-		float: left;
-		width: 50%;
-	}
-	.myndabox{
-		display: flex;
-		flex-flow: row nowrap;
-	}
-	.haegri { 
-		float: right;
-		width: 50%;
-	}
+  section {
+    display: block;
+  }
+  .vinstri {
+    float: left;
+    width: 50%;
+  }
+  .myndabox{
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  .haegri { 
+    float: right;
+    width: 50%;
+  }
 } 
 @media screen and (min-width:48em) {
-	section {
-		display: flex;
-		flex-flow: row;
-	}
-	.vinstri {
-		flex: 1 1 0;
-		order: 1;
-	}
-	.midja{
-		flex: 2 2 1em;
-		order: 2;
-	}
-	.haegri { 
-		flex: 1 1 0;
-		order:3;
-	}
+  section {
+    display: flex;
+    flex-flow: row;
+  }
+  .vinstri {
+    flex: 1 1 0;
+    order: 1;
+  }
+  .midja{
+    flex: 2 2 1em;
+    order: 2;
+  }
+  .haegri { 
+    flex: 1 1 0;
+    order:3;
+  }
   .topmenu {
     display: flex;
     flex-flow: row;
@@ -196,51 +196,96 @@ input:checked ~ .topmenu{
   }
 }
 @media screen and (min-width:64em) {
-	section{
-		display: flex;
-	}
-	.vinstri,
-	.haegri{
-		flex: 1 1 0;
-	}
-	.sMedia{
-		display: block;
-		position: fixed;
-		top: 4em;
-		left: 0;
-		height: 10em;
-		width: 2.5em;
-	}
-	header h1 {
-		line-height: 1.1;
-		color: #444;
-	}
+  section{
+    display: flex;
+  }
+  .vinstri,
+  .haegri{
+    flex: 1 1 0;
+  }
+  .sMedia{
+    display: block;
+    position: fixed;
+    top: 4em;
+    left: 0;
+    height: 10em;
+    width: 2.5em;
+  }
+  header h1 {
+    line-height: 1.1;
+    color: #444;
+  }
 }  
 @media screen and (min-width:80em) {
-	body{
-		max-width: 80em;
-		margin: 0 auto;
-	}
-}
-
-.auglysing1{
-  border: solid blue 2px;
-  top:0;
-  background-color: red;
-  position: relative;
-  animation-name: auglysingEitt;
-  animation-duration: 4s;
-}
-
-.auglysing1Box{
-  border: solid blue 2px;
-  background-color: blue;
-  height: 50px;
-  width: 100px;
-  position: relative;
+  body{
+    max-width: 80em;
+    margin: 0 auto;
+  }
 }
 @keyframes auglysingEitt {
     from  {background-color:blue; left:0px; top:-30em;}
+}
+
+.auglysing1{
+  height: 20em;
+  width: 20em;
+  border: solid blue 2px;
+  top:0;
+  background: linear-gradient(green,lightblue, green);
+  position: relative;
+  animation-name: auglysingEitt;
+  animation-duration: 4s;
+  overflow: hidden;
+
+}
+
+.auglysing1Animation{
+  left:-20em;
+  top: 20em;
+  position: relative;
+  animation-name: auglysingEittAnimation;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
+}
+.auglysing1Animation2{
+  left:-10em;
+  top: 20em;
+  position: relative;
+  animation-name: auglysingEittAnimationTvo;
+  animation-duration: 17.3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+  animation-delay: 4s;
+
+}
+.auglysing1Animation3{
+  left:-10em;
+  top: 20em;
+  position: relative;
+  animation-name: auglysingEittAnimation3;
+  animation-duration: 24.6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+  animation-delay: 8s;
+
+}
+
+
+.auglysing1Box{
+  border: solid blue 2px;
+  height: 50px;
+  width: 100px;
+  left:0;
+  top: 0;
+  background-color: navy;
+  font-family: 20px;
+  color: green;
+  position: relative;
+  border-radius: 10%; 
+  display: block;
+  z-index: 99;
 }
 
 .auglysing2{
@@ -274,7 +319,6 @@ input:checked ~ .topmenu{
   top: -4.5em;
   position: relative;
   z-index: 99;
-
 }
 
 .kassi{
@@ -289,8 +333,7 @@ input:checked ~ .topmenu{
   animation-timing-function: linear;
 }
 
-.kassi5{
-
+.kassi3{
   left:80em;
   top: -15em;
   position: relative;
@@ -320,8 +363,23 @@ input:checked ~ .topmenu{
   position: relative;
 }
 
+@keyframes auglysingEitt {
+    from  {top:-40em;}
+}
+
+
 @keyframes kassi {
     from  {left:-90em;}
+}
+
+@keyframes auglysingEittAnimation {
+    from  {top:-40em;}
+}
+@keyframes auglysingEittAnimationTvo {
+    from  {top:-80em;}
+}
+@keyframes auglysingEittAnimation3 {
+    from  {top:-160em;}
 }
 
 @keyframes logo {
