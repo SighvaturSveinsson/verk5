@@ -1,4 +1,4 @@
- * {
+* {
   box-sizing: border-box;
 }
 
@@ -259,8 +259,9 @@ input:checked ~ .topmenu{
   height: 50px;
   width: 100px;
   left:70em;
-  top: 5em;
-  background-color: grey;
+  top: 0;
+  background-color: navy;
+  font-family: 20px;
   color: green;
   position: relative;
   border-radius: 10%; 
@@ -269,32 +270,48 @@ input:checked ~ .topmenu{
 }
 
 .logo{
-  border: solid blue 2px;
-  height: 50px;
-  width: 100px;
-  left:0;
-  top: 0;
-  background-color: grey;
-  color: green;
+  left:-30em;
+  top: -4.5em;
   position: relative;
-  border-radius: 10%;
-  animation-name: logo;
-  animation-duration: 3s;
+  z-index: 99;
+
 }
 
 .kassi{
-  border: solid blue 2px;
   height: 50px;
   width: 100px;
-  left:100em;
+  left:80em;
   top: -5em;
-  background-color: grey;
-  color: red;
   position: relative;
-  border-radius: 10%;
   animation-name: kassi;
-  animation-duration: 3s;
-  animation-iteration-count: 1000;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.kassi5{
+
+  left:80em;
+  top: -15em;
+  position: relative;
+  animation-name: kassi;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay:13.8s; 
+}
+
+.kassi2{
+  height: 50px;
+  width: 100px;
+  left:80em;
+  top: -8em;
+  position: relative;
+  animation-name: kassi;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay:7.5s; 
 }
 
 .kassi1{
@@ -304,7 +321,7 @@ input:checked ~ .topmenu{
 }
 
 @keyframes kassi {
-    from  {left:0em;}
+    from  {left:-90em;}
 }
 
 @keyframes logo {
@@ -317,4 +334,3 @@ input:checked ~ .topmenu{
 
 footer p{
   color: red;
-}
